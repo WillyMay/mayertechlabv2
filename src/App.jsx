@@ -1,12 +1,9 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
  
   return (
     <>
-      <h1>Hola! Estoy actualizando mi pagina</h1>
+      <h1 className='text-3xl underline'>Hola! Estoy actualizando mi pagina</h1>
     </>
   )
 }
