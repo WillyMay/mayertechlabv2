@@ -6,12 +6,13 @@ import NoPage from "./components/NoPage";
 import Servicios from "./components/Servicios";
 import Nosotros from "./components/Nosotros";
 import Contacto from "./components/Contacto";
+import logo from "./assets/logo.webp";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar />}>
+        <Route path="/" element={<Navbar logoUrl={logo}/>} >
           <Route index element={<Home />} />
           <Route path="blog" element={<Blog />} />
           <Route path="servicios" element={<Servicios />} />

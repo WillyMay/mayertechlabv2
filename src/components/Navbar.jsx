@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   const [state, setState] = useState(false);
 
   // Replace javascript:void(0) paths with your paths
@@ -24,9 +24,9 @@ function Navbar() {
     <div className="flex items-center justify-between py-5 md:block h-full">
       <a href="/">
         <img
-          src="https://www.floatui.com/logo-dark.svg"
-          width={120}
-          height={50}
+          src={props.logoUrl}
+          width={80}
+          height={80}
           alt="Float UI logo"
         />
       </a>
