@@ -94,7 +94,7 @@ function Navbar() {
                     return (
                       <li
                         key={idx}
-                        className="text-gray-300 hover:text-gray-400"
+                        className="text-gray-300 hover:text-gray-400 font-bold"
                       >
                         <a href={item.path} className="block">
                           {item.title}
@@ -107,7 +107,7 @@ function Navbar() {
                       href="/"
                       className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-sky-500 hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-full md:inline-flex"
                     >
-                      Get started
+                      Contactanos
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
