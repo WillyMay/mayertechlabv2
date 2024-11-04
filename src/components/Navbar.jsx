@@ -27,7 +27,7 @@ function Navbar(props) {
           src={props.logoUrl}
           width={80}
           height={80}
-          alt="Float UI logo"
+          alt="Float logo"
         />
       </a>
       <div className="md:hidden">
