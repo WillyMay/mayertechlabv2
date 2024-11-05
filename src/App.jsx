@@ -10,6 +10,7 @@ import logo from "./assets/logo.webp";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import { navigation } from "./js/Navigation";
+import { servicios } from "./js/Servicios";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/" element={<Navbar logoUrl={logo} navUrl={navigation}/>} >
           <Route index element={<Home />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="servicios" element={<Servicios />} />
+          <Route path="servicios" element={<Servicios services={servicios}/>} />
           <Route path="nosotros" element={<Nosotros />} />
           <Route path="contacto" element={<Contacto />} />
           <Route path="portfolio" element={<Portfolio />} />
