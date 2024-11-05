@@ -4,7 +4,7 @@ function Footer(props) {
     const footerNavs = props.navUrl;
 
     return (
-        <footer className="text-gray-500 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8">
+        <footer className="sm:justify-center text-gray-500 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8">
             <div className="max-w-lg sm:mx-auto sm:text-center">
                 <img src={props.logoUrl} className="w-20 sm:mx-auto" />
             </div>
