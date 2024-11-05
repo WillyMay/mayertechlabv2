@@ -6,12 +6,7 @@ function Navbar(props) {
   const [state, setState] = useState(false);
 
   // Replace javascript:void(0) paths with your paths
-  const navigation = [
-    { title: "Blog", path: "/blog" },
-    { title: "Servicios", path: "/servicios" },
-    { title: "Nosotros", path: "/nosotros" },
-    { title: "Contacto", path: "/contacto" },
-  ];
+  const navigation = props.navUrl;
 
   useEffect(() => {
     document.onclick = (e) => {
