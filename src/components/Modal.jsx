@@ -1,8 +1,7 @@
 import React from "react";
 
 function Modal(props) {
-  const description = props.description;
-  {console.log(description)}
+
   return (
     <>
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
@@ -10,7 +9,7 @@ function Modal(props) {
         className="btn"
         onClick={() => document.getElementById("my_modal_3").showModal()}
       >
-        Más info
+        {props.name}
       </button>
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
@@ -20,8 +19,8 @@ function Modal(props) {
               ✕
             </button>
           </form>
-          <h3 className="font-bold text-lg">{description.name}</h3>
-          <p className="py-4">{description.description}</p>
+          <h3 className="font-bold text-lg">{props.name}</h3>
+          <p className="py-4">{props.description}</p>
         </div>
       </dialog>
     </>

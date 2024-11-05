@@ -10,6 +10,7 @@ function Servicios(props) {
       </h1>
       <ul className="flex flex-wrap justify-center mt-10 gap-10 ">
         {servicios.map((item) => (
+          
           <li key={item.id}>
             <div
               className="card bg-base-100 w-60 shadow-xl my-10"
@@ -22,7 +23,7 @@ function Servicios(props) {
                 <h2 className="card-title">{item.name}</h2>
                 <p>{item.summary}</p>
                 <div className="card-actions justify-end">
-                  <Modal description={item} />
+                   <Modal name={item.name} description={item.description} />
                 </div>
               </div>
             </div>
